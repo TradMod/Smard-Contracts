@@ -30,4 +30,6 @@ contract Ownable_GasGolfed {
     }
 }
 ```
-More Info: https://blog.soliditylang.org/2021/04/21/custom-errors/ && https://ethereum.stackexchange.com/questions/101782/requirecondition-message-vs-revert-with-a-custom-error-which-is-better-a
+References:
+1. https://blog.soliditylang.org/2021/04/21/custom-errors/ 
+2. https://ethereum.stackexchange.com/questions/101782/requirecondition-message-vs-revert-with-a-custom-error-which-is-better-a
