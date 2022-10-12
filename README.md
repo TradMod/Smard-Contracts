@@ -1,3 +1,5 @@
+# Gas Optimizations:
+
 ## I. Use `Custom Errors` instead of `Require` Statements
 
 The benefit of using [Custom Errors](https://blog.soliditylang.org/2021/04/21/custom-errors/)  is that they significantly reduce gas costs especially deployment costs because unlike `require`, `Custom Errors` do not store a dynamic `string` of Error Message to revert when an operation fails.
