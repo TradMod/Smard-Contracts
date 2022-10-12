@@ -12,14 +12,36 @@ contract Ownable {
     }
 }
 
-contract Ownable_GasGolfed {
+contract Ownable_SmardWay {
     
     error Only_Owner_Allowed(); 
   
     address public owner = msg.sender;
 
-    function newOwner_GasGolfed(address _newOwner) public {
+    function newOwner_SmardWay(address _newOwner) public {
         if(owner != msg.sender) { revert Only_Owner_Allowed(); }
         owner = _newOwner;
+    }
+}
+
+///// 2
+contract PrimeCheck {
+    function primeChecker(uint n) public pure returns (bool) {
+        for (uint i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+contract PrimeCheck_SmardWay {
+    function primeChecker_SmardWay(uint n) public pure returns (bool) {
+        for (uint i = 2; i < n; ++i) {
+            if (n % i == 0) {
+                return true;
+            }
+        }
+        return false;
     }
 }
